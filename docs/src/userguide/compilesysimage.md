@@ -8,7 +8,8 @@ Custom sysimages can significantly reduce load times for packages.
 
 The Julia extension adds a build task for custom sysimages to the Visual Studio Code task system. To run the build task, select the command `Tasks: Run Build Task` and then select `Julia: Build custom sysimage for current environment`. 
 
-The build task creates a sysimage that includes all packages in the current Julia environment. This sysimage is saved in the same folder where the `Project.toml` and `Manifest.toml` of the current Julia environment are stored. The name of the sysimage file will be `JuliaSysimage.dll` (Windows) or `JuliaSysimage.so`. 
+The build task creates a sysimage that includes all packages in the current Julia environment. This sysimage is saved in the same folder where the `Project.toml` and `Manifest.toml` of the current Julia environment are stored. The name of the sysimage file will be `JuliaSysimage.dll` (Windows), `JuliaSysimage.dylib` (macOS),
+or `JuliaSysimge.so`.
 
 ## Using custom sysimages
 
